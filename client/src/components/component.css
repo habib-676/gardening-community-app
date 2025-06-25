@@ -1,0 +1,9 @@
+.nav-bar>a{
+    border: 2px solid green;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.nav-bar>a:hover{
+    background: rgba(168, 255, 47, 0.425);
+    transition: all 0.5s;
+}

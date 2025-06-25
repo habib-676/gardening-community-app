@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* theme */
+@plugin "daisyui/theme" {
+  name: myThemeLight;
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-primary: #00ff00;
+  --color-secondary: #81c784;
+  --color-primary-content: #212121;
+  --color-secondary-content: #616161;
+  --color-accent: #795548;
+  --color-success: #aed581;
+  --color-warning: #ffb300;
+
+  --color-base-100: #f1f8e9;
+  --color-base-200: #ffffff;
+  --color-base-300: #e0f2f1;
+
+  --bc: #212121;
+}
+
+@plugin "daisyui/theme" {
+  name: myThemeDark;
+  default: false;
+  color-scheme: dark;
+
+  --color-primary: #66bb6a;
+  --color-secondary: #4a5a74;
+  --color-accent: #8d6e63;
+  --color-success: #aed581;
+  --color-warning: #ffca28;
+  --color-primary-content: #e0f2f1;
+  --color-secondary-content: #a5a5a5;
+
+  --color-base-100: #1b1f22;
+  --color-base-200: #263238;
+  --color-base-300: #37474f;
+
+  --bc: #e0f2f1;
+}
+
+/* fonts */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a.active {
+  text-decoration: underline;
+}

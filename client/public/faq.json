@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What is this platform all about?",
+    "answer": "This is a community-driven hub where gardening lovers can share tips, ask questions, find local gardeners, and connect through events and shared interests like composting, hydroponics, and balcony gardening."
+  },
+  {
+    "id": 2,
+    "question": "Is this platform free to use?",
+    "answer": "Yes, joining and using the basic features of our gardening community is completely free for everyone."
+  },
+  {
+    "id": 3,
+    "question": "How can I ask a plant care question?",
+    "answer": "Simply sign up, go to the 'Ask a Question' section, and post your query. Other members and experts in the community will help you out."
+  },
+  {
+    "id": 4,
+    "question": "Can I post my own gardening tips?",
+    "answer": "Absolutely! Once you're logged in, you can submit your tips and even include pictures or videos to help others learn better."
+  },
+  {
+    "id": 5,
+    "question": "How do I join or create a gardening event?",
+    "answer": "Head to the 'Events' section. You can browse upcoming events, RSVP, or create your own by filling out the event form."
+  },
+  {
+    "id": 6,
+    "question": "Can I find local gardeners in my area?",
+    "answer": "Yes! Use our 'Find Gardeners' feature to connect with green thumbs near you, perfect for sharing resources or collaborating."
+  },
+  {
+    "id": 7,
+    "question": "Is this community suitable for beginners?",
+    "answer": "Of course! Our platform welcomes gardeners of all skill levels, and there’s a special 'Beginner Tips' section to help you get started."
+  },
+  {
+    "id": 8,
+    "question": "What topics can I explore here?",
+    "answer": "You can explore topics like composting, hydroponics, vertical gardens, seasonal planting, pest control, soil health, and more."
+  }
+]

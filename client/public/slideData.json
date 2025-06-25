@@ -1,0 +1,26 @@
+[
+  {
+    "backgroundImage": "https://i.ibb.co/LzJs6q2S/1.jpg",
+    "title": "🌻 Community Garden Day",
+    "description": "Join your local gardeners for a fun-filled day of planting, workshops, and fresh produce exchange.",
+    "buttonText": "Join Event"
+  },
+  {
+    "backgroundImage": "https://i.ibb.co/r2VySkP1/2.jpg",
+    "title": "🏙️ Urban Gardening Workshop",
+    "description": "Learn how to turn your balcony into a green oasis with container gardening tips and tricks.",
+    "buttonText": "Register Now"
+  },
+  {
+    "backgroundImage": "https://i.ibb.co/PvhfnJpQ/3.jpg",
+    "title": "♻️ Composting 101",
+    "description": "Discover the benefits of composting and how to start your own eco-friendly system at home.",
+    "buttonText": "Learn More"
+  },
+  {
+    "backgroundImage": "https://i.ibb.co/8L74VZ9t/4.jpg",
+    "title": "💧 Hydroponics for Beginners",
+    "description": "Dive into soil-free gardening and grow your own leafy greens with hydroponic methods.",
+    "buttonText": "Explore Session"
+  }
+]
