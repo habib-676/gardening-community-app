@@ -93,7 +93,7 @@ To run this project on your local machine, follow the steps below:
 
 ```bash
 git clone https://github.com/habib-676/gardening-community-app.git
-cd Fixitronics-app
+cd gardening-community
 cd client
 npm run dev
 ```
