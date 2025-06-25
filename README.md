@@ -28,3 +28,17 @@
 Users can browse public tips, view trending ideas, connect with active gardeners, and even share their own gardening secrets. With private route protections, real-time like counts, and a responsive design, the platform ensures a smooth and enjoyable user experience for everyone.
 
 ---
+---
+
+## 💻 Run Locally
+
+To run this project on your local machine, follow the steps below:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/habib-676/gardening-community-app.git
+cd gardening-community
+cd client
+npm run dev
+```
