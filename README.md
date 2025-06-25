@@ -7,6 +7,7 @@
 **Live Client Site:** [https://gardening-community-69.web.app/](https://gardening-community-69.web.app/)
 
 ---
+<img src="https://github.com/habib-676/gardening-community-app/blob/main/Screenshot%202025-06-25%20182732.png"></img>
 
 ## ✅ Features
 
