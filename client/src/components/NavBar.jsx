@@ -65,9 +65,9 @@ const NavBar = () => {
       });
   };
   return (
-    <div className="text-primary-content ">
-      <div className="navbar flex-wrap lg:flex-nowrap gap-2 items-center justify-center md:justify-between bg-base-200 shadow-sm">
-        <div className=" md:flex items-center justify-center hidden">
+    <div className="text-primary-content">
+      <div className="navbar flex-wrap lg:flex-nowrap gap-2 items-center justify-center md:justify-between bg-secondary shadow-sm">
+        <div className="md:flex items-center justify-center hidden">
           <img src={logo} className="w-12 rounded-full " />
 
           <a className="font-bold text-xl hidden lg:inline">
@@ -94,18 +94,22 @@ const NavBar = () => {
               <GiEarthAsiaOceania />
             </span>
           </NavLink>
-          <NavLink to={"/share-tip"}>
-            <span className="hidden lg:block ">Share a Garden Tip</span>
-            <span className="lg:hidden">
-              <RiUserSharedFill />
-            </span>
-          </NavLink>
-          <NavLink to={"/my-tips"}>
-            <span className="hidden lg:block "> My Tips</span>
-            <span className="lg:hidden">
-              <MdOutlinePersonPin />
-            </span>
-          </NavLink>
+          {user && (
+            <>
+              <NavLink to={"/share-tip"}>
+                <span className="hidden lg:block ">Share a Garden Tip</span>
+                <span className="lg:hidden">
+                  <RiUserSharedFill />
+                </span>
+              </NavLink>
+              <NavLink to={"/my-tips"}>
+                <span className="hidden lg:block "> My Tips</span>
+                <span className="lg:hidden">
+                  <MdOutlinePersonPin />
+                </span>
+              </NavLink>
+            </>
+          )}
         </div>
         <div className="flex items-center gap-3">
           <label className="flex cursor-pointer gap-2">
@@ -171,7 +175,7 @@ const NavBar = () => {
               </div>
             ) : (
               <NavLink to={"/auth/register"}>
-                <button className="btn btn-secondary text-primary-content">
+                <button className="btn btn-accent text-white">
                   Sign up
                 </button>
               </NavLink>

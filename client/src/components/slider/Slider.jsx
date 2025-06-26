@@ -17,7 +17,7 @@ const Slider = () => {
   const slides = use(slidesPromise);
 
   return (
-    <div className="min-w-11/12 mx-auto">
+    <div className="min-w-11/12 mx-auto max-h-[70vh]">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -32,7 +32,7 @@ const Slider = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper flex justify-center items-center min-h-[80vh]"
+        className="mySwiper flex justify-center items-center h-full"
       >
         {/* items */}
 
