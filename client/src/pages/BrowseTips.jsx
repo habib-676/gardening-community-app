@@ -23,34 +23,74 @@ const BrowseTips = () => {
     setShowTips(currentTips);
   };
 
+  const handleAscending = () => {
+    const ascendedTips = [...initialTips].sort((a, b) =>
+      a.title.localeCompare(b.title)
+    );
+    setShowTips(ascendedTips);
+  };
+
+  const handleDescending = () => {
+    const descendedTips = [...initialTips].sort((a, b) =>
+      b.title.localeCompare(a.title)
+    );
+    setShowTips(descendedTips);
+  };
+
   return (
     <div className="text-primary-content my-10">
       <Fade delay={1e3}>
         <h3 className="text-3xl text-center mt-10 font-bold">All tips </h3>
       </Fade>
-      <div className="dropdown dropdown-hover flex flex-row-reverse ">
-        <div
-          tabIndex={0}
-          role="button"
-          className="btn m-1 border border-accent-content text-primary-content bg-base-300"
-        >
-          Filter
+      <div className="flex items-center justify-end gap-5">
+        <div className="dropdown">
+          {/* sorting */}
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn m-1 border border-accent-content text-primary-content bg-base-300"
+          >
+            Sort
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu bg-base-200 rounded-box z-1 w-52 p-2 shadow-sm *:hover:bg-secondary"
+          >
+            <li>
+              <a onClick={handleAscending}>a-z</a>
+            </li>
+            <li>
+              <a onClick={handleDescending}>z-a</a>
+            </li>
+          </ul>
         </div>
-        <ul
-          tabIndex={0}
-          className="dropdown-content menu bg-base-200 rounded-box z-1 w-52 p-2 shadow-sm *:hover:bg-secondary"
-        >
-          <li>
-            <a onClick={handleEasy}>Easy</a>
-          </li>
-          <li>
-            <a onClick={handleMedium}>Medium</a>
-          </li>
-          <li>
-            <a onClick={handleHard}>Hard</a>
-          </li>
-        </ul>
+
+        <div className="dropdown flex flex-row-reverse ">
+          {/* filter */}
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn m-1 border border-accent-content text-primary-content bg-base-300"
+          >
+            Filter
+          </div>
+          <ul
+            tabIndex={0}
+            className="dropdown-content menu bg-base-200 rounded-box z-1 w-52 p-2 shadow-sm *:hover:bg-secondary"
+          >
+            <li>
+              <a onClick={handleEasy}>Easy</a>
+            </li>
+            <li>
+              <a onClick={handleMedium}>Medium</a>
+            </li>
+            <li>
+              <a onClick={handleHard}>Hard</a>
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div className="overflow-x-auto">
         <table className="table ">
           <thead className="text-secondary-content">

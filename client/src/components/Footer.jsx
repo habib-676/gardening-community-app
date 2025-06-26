@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { SiFacebook } from "react-icons/si";
 import { RiInstagramFill } from "react-icons/ri";
-import { FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-20">
@@ -16,33 +16,25 @@ const Footer = () => {
       </aside>
       <nav className="space-y-5">
         <div>
-          <h6 className="footer-title">Contact Info</h6>
-          <div className="grid grid-flow-row gap-4">
-            <p>📍 Address: 123 Garden Lane, Green City, Earth</p>
-            <p>📞 Phone: +1 (234) 567-890</p>
+          <h6 className="footer-title">Go to :</h6>
+          <div className="grid grid-flow-col gap-4">
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/explore"}>Explore gardeners</NavLink>
+            <NavLink to={"/browse-tips"}>Browse tips</NavLink>
           </div>
         </div>
 
         <div>
-          <h6 className="footer-title">Terms and conditions</h6>
-          <div className="grid grid-flow-row gap-4">
-            <p>
-              By registering or using our platform, you agree to follow these
-              terms.
-            </p>
-          </div>
-        </div>
-        <div>
           <h6 className="footer-title">Social</h6>
           <div className="grid grid-flow-col gap-4">
-            <a href="https://www.facebook.com/" target="#">
+            <a href="https://www.facebook.com/habib676" target="#">
               <SiFacebook size={30} />
             </a>
-            <a href="https://www.instagram.com/" target="#">
+            <a href="https://www.instagram.com/ha_bib_676" target="#">
               <RiInstagramFill size={30} />
             </a>
-            <a href="https://twitter.com/" target="#">
-              <FaTwitter size={30} />
+            <a href="https://linkedin.com/in/wdhabib" target="#">
+              <FaLinkedin size={30} />
             </a>
           </div>
         </div>
