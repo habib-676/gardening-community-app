@@ -3,12 +3,13 @@ import { NavLink } from "react-router";
 import logo from "../assets/images/logo.png";
 import { AuthContext } from "../provider/AuthContext";
 import "./component.css";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaPhoneSquareAlt } from "react-icons/fa";
 import { IoMdCompass } from "react-icons/io";
 import { GiEarthAsiaOceania } from "react-icons/gi";
 
 import { MdDashboard } from "react-icons/md";
 import Swal from "sweetalert2";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 const NavBar = () => {
   const { user, logOutUser } = use(AuthContext);
@@ -101,7 +102,19 @@ const NavBar = () => {
                 <MdDashboard />
               </span>
             </NavLink>
-          )}
+          )}{" "}
+          <NavLink>
+            <span className="hidden lg:block ">About us</span>
+            <span className="lg:hidden">
+              <FaPeopleGroup />
+            </span>
+          </NavLink>
+          <NavLink to={'/contact'}>
+            <span className="hidden lg:block "> Contact</span>
+            <span className="lg:hidden">
+              <FaPhoneSquareAlt />
+            </span>
+          </NavLink>
         </div>
         <div className="flex items-center gap-3">
           <label className="flex cursor-pointer gap-2">

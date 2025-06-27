@@ -15,6 +15,7 @@ import UpdateTip from "../pages/UpdateTip";
 import ErrorPage from "../pages/ErrorPage";
 import Explore from "../pages/Explore";
 import Dashboard from "../pages/dashboard/Dashboard";
+import Contact from "../pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
         hydrateFallbackElement: <Loading></Loading>,
         loader: () =>
           fetch("https://gadening-community-server.vercel.app/gardenTips"),
+      },
+      {
+        path: "contact",
+        Component: Contact,
       },
     ],
   },
