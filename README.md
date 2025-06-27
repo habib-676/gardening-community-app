@@ -9,6 +9,9 @@
 ---
 <img src="https://github.com/habib-676/gardening-community-app/blob/main/Screenshot%202025-06-25%20182732.png"></img>
 
+# Dashboard
+<img src="https://github.com/habib-676/gardening-community-app/blob/main/Screenshot 2025-06-27 134744.png"></img>
+
 ## 📝 Project Description
 
 **GreenCircle** is an online platform for gardening lovers to share knowledge, post helpful tips, and connect with others who are passionate about growing plants. From composting and plant care to vertical and balcony gardening—GreenCircle brings together a community that thrives on green living.
