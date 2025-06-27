@@ -1,8 +1,4 @@
-import React, { use } from "react";
-import { AuthContext } from "../provider/AuthContext";
-
 const Contact = () => {
-  const { user } = use(AuthContext);
   return (
     <div className="text-primary-content my-14">
       <h1 className="font-bold text-3xl text-center">Contact us </h1>
@@ -13,7 +9,7 @@ const Contact = () => {
             <input
               type="text"
               className="input border-accent-content"
-              defaultValue={user.displayName}
+              placeholder="Enter your Name"
               name="name"
               required
             />
@@ -21,7 +17,7 @@ const Contact = () => {
             <input
               type="email"
               className="input border-accent-content"
-              defaultValue={user.email}
+              placeholder="Enter your email"
               name="email"
               required
             />

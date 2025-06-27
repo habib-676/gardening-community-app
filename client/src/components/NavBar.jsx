@@ -103,13 +103,13 @@ const NavBar = () => {
               </span>
             </NavLink>
           )}{" "}
-          <NavLink>
+          <NavLink to={'/about-us'}>
             <span className="hidden lg:block ">About us</span>
             <span className="lg:hidden">
               <FaPeopleGroup />
             </span>
           </NavLink>
-          <NavLink to={'/contact'}>
+          <NavLink to={"/contact"}>
             <span className="hidden lg:block "> Contact</span>
             <span className="lg:hidden">
               <FaPhoneSquareAlt />

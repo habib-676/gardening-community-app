@@ -16,6 +16,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Explore from "../pages/Explore";
 import Dashboard from "../pages/dashboard/Dashboard";
 import Contact from "../pages/Contact";
+import AboutUs from "../pages/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         Component: Contact,
+      },
+      {
+        path: "about-us",
+        Component: AboutUs,
       },
     ],
   },
