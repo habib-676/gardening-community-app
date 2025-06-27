@@ -14,6 +14,7 @@ import MyTips from "../pages/MyTips";
 import UpdateTip from "../pages/UpdateTip";
 import ErrorPage from "../pages/ErrorPage";
 import Explore from "../pages/Explore";
+import Dashboard from "../pages/dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -83,6 +84,17 @@ const router = createBrowserRouter([
         loader: () =>
           fetch("https://gadening-community-server.vercel.app/gardeners"),
         hydrateFallbackElement: <Loading></Loading>,
+      },
+      {
+        path: "dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+        ),
+        hydrateFallbackElement: <Loading></Loading>,
+        loader: () =>
+          fetch("https://gadening-community-server.vercel.app/gardenTips"),
       },
     ],
   },

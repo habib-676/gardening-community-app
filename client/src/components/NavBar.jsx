@@ -6,8 +6,8 @@ import "./component.css";
 import { FaHome } from "react-icons/fa";
 import { IoMdCompass } from "react-icons/io";
 import { GiEarthAsiaOceania } from "react-icons/gi";
-import { RiUserSharedFill } from "react-icons/ri";
-import { MdOutlinePersonPin } from "react-icons/md";
+
+import { MdDashboard } from "react-icons/md";
 import Swal from "sweetalert2";
 
 const NavBar = () => {
@@ -95,20 +95,12 @@ const NavBar = () => {
             </span>
           </NavLink>
           {user && (
-            <>
-              <NavLink to={"/share-tip"}>
-                <span className="hidden lg:block ">Share a Garden Tip</span>
-                <span className="lg:hidden">
-                  <RiUserSharedFill />
-                </span>
-              </NavLink>
-              <NavLink to={"/my-tips"}>
-                <span className="hidden lg:block "> My Tips</span>
-                <span className="lg:hidden">
-                  <MdOutlinePersonPin />
-                </span>
-              </NavLink>
-            </>
+            <NavLink to={"/dashboard"}>
+              <span className="hidden lg:block ">Dashboard</span>
+              <span className="lg:hidden">
+                <MdDashboard />
+              </span>
+            </NavLink>
           )}
         </div>
         <div className="flex items-center gap-3">
@@ -175,9 +167,7 @@ const NavBar = () => {
               </div>
             ) : (
               <NavLink to={"/auth/register"}>
-                <button className="btn btn-accent text-white">
-                  Sign up
-                </button>
+                <button className="btn btn-accent text-white">Sign up</button>
               </NavLink>
             )}
           </div>

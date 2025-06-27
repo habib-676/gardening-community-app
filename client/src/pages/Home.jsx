@@ -4,6 +4,7 @@ import Featured from "../components/Featured";
 import TrendingTips from "../components/trending-tips/TrendingTips";
 import Stats from "../components/Stats";
 import Faq from "../components/Faq";
+import Promotion from "../components/promotional/Promotion";
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
       </section>
       <section>
         <Faq></Faq>
+      </section>
+      <section className="my-10">
+        <Promotion/>
       </section>
     </div>
   );
